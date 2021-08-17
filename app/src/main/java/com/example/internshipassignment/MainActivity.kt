@@ -2,8 +2,11 @@ package com.example.internshipassignment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
+import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
+
+import com.example.internshipassignment.BottomSheets.BottomSheet1
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,10 +28,15 @@ class MainActivity : AppCompatActivity() {
 
             supportActionBar?.hide()
 
-
-            val bottomSheet1=BottomSheet1()
+            Log.d("Buttonclick","check from here")
+            val bottomSheet1= BottomSheet1()
             bottomSheet1.show(supportFragmentManager,"hi imthe bottom sheet")
 
+
+
+
         }
+
     }
+
 }

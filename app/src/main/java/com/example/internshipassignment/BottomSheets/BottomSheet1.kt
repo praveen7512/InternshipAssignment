@@ -1,12 +1,12 @@
-package com.example.internshipassignment
+package com.example.internshipassignment.BottomSheets
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import com.example.internshipassignment.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.bottomsheet1.view.*
 
 class BottomSheet1: BottomSheetDialogFragment() {
@@ -25,8 +25,9 @@ class BottomSheet1: BottomSheetDialogFragment() {
         view.bottomsheetbtn.setOnClickListener {
 
 
-            val bottomSheet2=BottomSheet2()
+            val bottomSheet2= BottomSheet2()
             bottomSheet2.show((activity as AppCompatActivity).supportFragmentManager,"HIII")
+
         }
 
         return view
@@ -37,6 +38,8 @@ class BottomSheet1: BottomSheetDialogFragment() {
     override fun getTheme(): Int {
         return R.style.AppBottomSheetDialogTheme
     }
+
+
 
 
 
