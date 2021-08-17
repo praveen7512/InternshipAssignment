@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
 
         Openbtn.setOnClickListener {
 
+            supportActionBar?.hide()
+
 
             val bottomSheet1=BottomSheet1()
             bottomSheet1.show(supportFragmentManager,"hi imthe bottom sheet")
