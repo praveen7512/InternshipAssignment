@@ -18,6 +18,8 @@ class BottomSheet1: BottomSheetDialogFragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
+
+        //this will inflate the fragmentlaqyout
        val view= LayoutInflater.from(context).inflate(R.layout.bottomsheet1,container,false)
 
         view.bottomsheetbtn.setOnClickListener {
@@ -27,18 +29,16 @@ class BottomSheet1: BottomSheetDialogFragment() {
             bottomSheet2.show((activity as AppCompatActivity).supportFragmentManager,"HIII")
         }
 
-
-
-
-
-
-
         return view
     }
 
+
+   //this function will set the background of bottomsheet
     override fun getTheme(): Int {
         return R.style.AppBottomSheetDialogTheme
     }
+
+
 
 
 }

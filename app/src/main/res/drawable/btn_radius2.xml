@@ -4,14 +4,14 @@
 
 
 
-    <gradient android:startColor="#87cefa"
-        android:angle="0"
-        android:endColor="#9fd8fb"/>
+    <gradient android:startColor="@color/purple_500"
+      android:endColor="@color/purple_500"
+        />
 
 
 
     <corners
-       android:radius="20dp" />
+        android:radius="20dp" />
 
 
 

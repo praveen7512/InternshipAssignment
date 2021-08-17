@@ -11,6 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+      // this function will set the click on the mainactivty button
+        setbutton()
+
+
+
+
+    }
+
+    fun setbutton(){
 
         Openbtn.setOnClickListener {
 
@@ -19,8 +28,5 @@ class MainActivity : AppCompatActivity() {
             bottomSheet1.show(supportFragmentManager,"hi imthe bottom sheet")
 
         }
-
-
-
     }
 }
