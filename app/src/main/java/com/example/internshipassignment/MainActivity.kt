@@ -6,6 +6,7 @@ import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 import com.example.internshipassignment.BottomSheets.BottomSheet1
+import kotlinx.android.synthetic.main.bottomsheet1.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +32,8 @@ class MainActivity : AppCompatActivity() {
             Log.d("Buttonclick","check from here")
             val bottomSheet1= BottomSheet1()
             bottomSheet1.show(supportFragmentManager,"hi imthe bottom sheet")
+
+
 
 
 

@@ -1,12 +1,17 @@
 package com.example.internshipassignment.BottomSheets
 
+import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.internshipassignment.R
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import kotlinx.android.synthetic.main.bottomsheet1.*
 import kotlinx.android.synthetic.main.bottomsheet1.view.*
 
 class BottomSheet1: BottomSheetDialogFragment() {
@@ -26,9 +31,17 @@ class BottomSheet1: BottomSheetDialogFragment() {
 
 
             val bottomSheet2= BottomSheet2()
+
             bottomSheet2.show((activity as AppCompatActivity).supportFragmentManager,"HIII")
 
+           //his function will set margin to bottomsheet
+            setmargin()
+
+
+
         }
+
+
 
         return view
     }
@@ -40,6 +53,22 @@ class BottomSheet1: BottomSheetDialogFragment() {
     }
 
 
+
+     fun setmargin(){
+
+
+         (view?.parent as View).setBackgroundColor(Color.WHITE)
+         val resources = resources
+
+         if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+             assert(view != null)
+             val parent = view?.parent as View
+             val layoutParams = parent.layoutParams as CoordinatorLayout.LayoutParams
+             layoutParams.width=1000
+
+             parent.layoutParams = layoutParams
+         }
+     }
 
 
 
