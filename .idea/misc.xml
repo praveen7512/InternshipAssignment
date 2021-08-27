@@ -3,11 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/bottmsheetstyle.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/bottomsheetchange_style.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/bottomsheetstyle2.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/btn_radius.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/btn_radius2.xml" value="0.1" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/drawable/new_row.xml" value="0.1" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/layout/bottomsheet1.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Home/AndroidStudioProjects/InternshipAssignment/app/src/main/res/layout/bottomsheet2_additional.xml" value="0.22" />

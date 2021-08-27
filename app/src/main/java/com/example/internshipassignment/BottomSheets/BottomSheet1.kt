@@ -1,19 +1,20 @@
 package com.example.internshipassignment.BottomSheets
 
+import android.content.DialogInterface
 import android.content.res.Configuration
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.internshipassignment.R
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bottomsheet1.*
 import kotlinx.android.synthetic.main.bottomsheet1.view.*
-
+private const val tag = "MyActivity"
 class BottomSheet1: BottomSheetDialogFragment() {
 
 
@@ -27,6 +28,8 @@ class BottomSheet1: BottomSheetDialogFragment() {
         //this will inflate the fragmentlaqyout
        val view= LayoutInflater.from(context).inflate(R.layout.bottomsheet1,container,false)
 
+
+
         view.bottomsheetbtn.setOnClickListener {
 
 
@@ -34,8 +37,10 @@ class BottomSheet1: BottomSheetDialogFragment() {
 
             bottomSheet2.show((activity as AppCompatActivity).supportFragmentManager,"HIII")
 
+
+
            //his function will set margin to bottomsheet
-            setmargin()
+                     setmargin()
 
 
 
@@ -43,12 +48,15 @@ class BottomSheet1: BottomSheetDialogFragment() {
 
 
 
+
         return view
     }
 
 
+
+
    //this function will set the background of bottomsheet
-    override fun getTheme(): Int {
+   override fun getTheme(): Int {
         return R.style.AppBottomSheetDialogTheme
     }
 
@@ -57,7 +65,7 @@ class BottomSheet1: BottomSheetDialogFragment() {
      fun setmargin(){
 
 
-         (view?.parent as View).setBackgroundColor(Color.WHITE)
+         (view?.parent as View).setBackgroundColor(Color.TRANSPARENT)
          val resources = resources
 
          if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
@@ -69,6 +77,9 @@ class BottomSheet1: BottomSheetDialogFragment() {
              parent.layoutParams = layoutParams
          }
      }
+
+
+
 
 
 

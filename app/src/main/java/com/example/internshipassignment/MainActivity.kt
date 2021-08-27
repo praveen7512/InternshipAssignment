@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("Buttonclick","check from here")
             val bottomSheet1= BottomSheet1()
-            bottomSheet1.show(supportFragmentManager,"hi imthe bottom sheet")
+            bottomSheet1.show(supportFragmentManager,"hi im the bottom sheet")
 
 
 
