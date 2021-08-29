@@ -11,11 +11,12 @@ import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.example.internshipassignment.R
+import com.example.internshipassignment.setwidth
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bottomsheet1.*
 import kotlinx.android.synthetic.main.bottomsheet1.view.*
 private const val tag = "MyActivity"
-class BottomSheet1: BottomSheetDialogFragment() {
+class BottomSheet1: BottomSheetDialogFragment(),setwidth {
 
 
 
@@ -33,7 +34,7 @@ class BottomSheet1: BottomSheetDialogFragment() {
         view.bottomsheetbtn.setOnClickListener {
 
 
-            val bottomSheet2= BottomSheet2()
+            val bottomSheet2= BottomSheet2(this)
 
             bottomSheet2.show((activity as AppCompatActivity).supportFragmentManager,"HIII")
 
@@ -78,10 +79,19 @@ class BottomSheet1: BottomSheetDialogFragment() {
          }
      }
 
+    override fun setwidtrh() {
+        (view?.parent as View).setBackgroundColor(Color.TRANSPARENT)
+        val resources = resources
 
+        if (resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            assert(view != null)
+            val parent = view?.parent as View
+            val layoutParams = parent.layoutParams as CoordinatorLayout.LayoutParams
+            layoutParams.width=1100
 
-
-
+            parent.layoutParams = layoutParams
+        }
+    }
 
 
 }

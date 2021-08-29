@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import com.example.internshipassignment.R
+import com.example.internshipassignment.setwidth
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bottomsheet1.*
 import kotlinx.android.synthetic.main.bottomsheet2_additional.*
@@ -16,7 +17,7 @@ import kotlinx.android.synthetic.main.bottomsheet2_additional.view.*
 
 
 
-class BottomSheet2:BottomSheetDialogFragment() {
+class BottomSheet2(val cnt :setwidth):BottomSheetDialogFragment() {
 
 
 
@@ -30,7 +31,10 @@ class BottomSheet2:BottomSheetDialogFragment() {
         //this will inflate the fragmentlaqyout
 
         val view= LayoutInflater.from(context).inflate(R.layout.bottomsheet2_additional,container,false)
+       view.button2.setOnClickListener {
+            cnt.setwidtrh()
 
+       }
 
         return view
     }
